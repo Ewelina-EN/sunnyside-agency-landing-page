@@ -1,37 +1,44 @@
 /* font-family: 'Barlow', sans-serif; logo, menu bez kontakt, teksty, info od klientow,stanowiska klientow, stopka*/
 /* font-family: 'Fraunces', serif; */
-/* html {
-    box-sizing: border-box;
-} */
-
-/* *, ::after, ::before {
-    box-sizing: inherit;
-} */
 
 body {
     margin: 0 auto;
+    width: 100%;
 }
 
 .big_image{
     background-image: url("./images/desktop/image-header.jpg");
-    min-height: 900px;
+    min-height: 750px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .nav_box{
-    position: absolute;
-    margin: 20px;
-    width: auto;
-}
-
-.navigation{
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+.nav_list{
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    margin: 20px;
+}
+
+.nav_btn{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: 10px 15px;
+    font-size: 12px;
+    margin-left: 10px;
 }
 
 .header_text{
@@ -40,56 +47,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
-    font-size: 30px;
+    padding-top: 50px;
+    font-size: 25px;
     letter-spacing: 10px;
     color: hsl(0, 0%, 100%);
 }
 
 .header_arrow{
-    padding-top: 60px;
+    padding-top: 40px;
 }
-   
-
-
-
 
 .container {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 1 / 2 / 2 / 3; }
-.div3 { grid-area: 2 / 1 / 3 / 2; }
-.div4 { grid-area: 2 / 2 / 3 / 3; }
-.div5 { grid-area: 3 / 1 / 4 / 2; }
-.div6 { grid-area: 3 / 2 / 4 / 3; }
-
-.testimonial {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 65%;
-    background-color: #2f1d58;
-    height: 80vh;
-    overflow: auto;
-    flex-direction: row;
-}
-
-.testimonial div {
-    width: 250px;
-    height: 250px;
-    margin: 5px;
-    background-color: lightblue;
-}
-
-.images{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
 }
