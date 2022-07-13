@@ -123,20 +123,48 @@ body {
    width: 50%;
 }
 
-.graphic{
-    background-image: url("./images/desktop/image-graphic-design.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.gp_element{
+    float: left;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.gp_img{
+    width: 100%;
+}
+
+.gp_text{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 300px;
+}
+
+.graphic{
+    color: hsl(167, 40%, 24%);
 }
 
 .photography{
-    background-image: url("./images/desktop/image-photography.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: hsl(198, 62%, 26%)
 }
 
+.gp_header{
+    font-family: 'Fraunces', serif;
+    margin-bottom: 10px;
+    margin: 0;
+    font-size: 25px;
+}
+
+.gp_info{
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
 
 
