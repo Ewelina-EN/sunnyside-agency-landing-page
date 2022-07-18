@@ -115,89 +115,37 @@ body {
     font-size: 10px;
     font-weight: bold;
     text-decoration: none;
+    padding: 0 10px 0 0;
 }
 
-.yellow_hover:hover{
-    text-decoration: underline hsl(51, 100%, 49%) 5px;
+/* sprobowac uzyc negatywnego margin */
+/* doinstalowac do chrome: validator html i validator css */
+
+.yellow_hover::after{
+    border-radius: 5px;
+    display:block;
+    height:5px;
+    content: "";
+    margin: -5px;
+}
+.yellow_hover:hover::after{
+    background-color: hsl(51, 100%, 49%);
 }
 
-.red_hover:hover{
-    text-decoration: underline hsl(7, 99%, 70%) 5px;
+.red_hover::after{
+    border-radius: 5px;
+    display:block;
+    height:5px;
+    content: "";
+    margin: -5px;
+}
+.red_hover:hover::after{
+    background-color: hsl(7, 99%, 70%);
 }
 
 .container_image{
     width: 50%;
 }
-
-
-
-/* .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-overflow: hidden;
-
-.container > img {
-    float:right;
-
-.container_text{
-    min-width: 300px;
-    width: 100%; 
-    float:left;
-}
-.container:nth-child(even) > img {
-    float:left;
-}
-.container:nth-child(even) > .container_text {
-    float:right;
-}
-
-.container_header{
-    font-family: 'Fraunces', serif;
-    color: hsl(212, 27%, 19%);
-    margin-bottom: 10px;
-    margin: 0;
-    font-size: 25px;
-}
-
-.container_box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 350px;
-    margin: 0 auto;
-    max-width: 350px;
-}
-
-.container_info{
-    font-family: 'Barlow', sans-serif;
-    color: hsl(210, 4%, 67%);
-    font-size: 14px;
-    line-height: 25px;
-    margin: 25px 0 25px 0;
-}
-
-.container_link{
-    font-family: 'Fraunces', serif;
-    color: hsl(212, 27%, 19%);
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.yellow_hover:hover{
-    text-decoration: underline hsl(51, 100%, 49%) 5px;
-}
-
-.red_hover:hover{
-    text-decoration: underline hsl(7, 99%, 70%) 5px;
-}
-
-.container_image {
-   width: 50%;
-} */
 
 .gp{
     display: flex;
@@ -221,7 +169,7 @@ overflow: hidden;
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 60px; */
+    margin-bottom: 60px;
     width: 300px;
 }
 
@@ -348,8 +296,17 @@ overflow: hidden;
 
 .footer_social{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     width: 200px;
     margin-top: 20px;
+}
+
+@media (max-width: 700px){
+    .big_image{
+        background-image: url("./images/desktop/image-header.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 }
