@@ -11,7 +11,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -26,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.png)
 
 
 ### Links
@@ -44,30 +43,16 @@ Users should be able to:
 - CSS Grid
 ### What I learned
 
-First, after this project, I will do every next project with Mobile-first workflow: Taking a Mobile First approach aims to reverse the workflow of designing for desktop and scaling down the design for mobile afterwards.  
-To see how you can add code snippets, see below:
+After this project, I will do every next project with Mobile-first workflow: Taking a Mobile First approach aims to reverse the workflow of designing for desktop and scaling down the design for mobile afterwards.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Looking for an idea how to make a menu for mobile devices, I read for the first time about CSS property: opacity. I decided to use this property. It is used in a condition in the JavaScript file. 
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Like every project, I used the html validator to validate the document.
 
 ### Useful resources
 
+- About opacity CSS property: https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
+- Markup Validation Service: https://validator.w3.org/
 
 ## Author
 
