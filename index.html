@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;900&display=swap" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -14,19 +14,19 @@
 <body>
   <div class="big_image">
     <div class="nav_box">
-      <img src="images/logo.svg">
+      <img src="images/logo.svg" alt="logo image">
       <div class="nav_section">
         <a class="nav_list" href="">About</a>
         <a class="nav_list" href="">Services</a>
         <a class="nav_list" href="">Projects</a>
         <button class="nav_btn">CONTACT</button>
       </div>
-      <img src="./images/icon-hamburger.svg" alt="icon-hamburger" class="mobile_menu" id="menu">
+      <img src="./images/icon-hamburger.svg" alt="icon_hamburger" class="mobile_menu" id="menu">
     </div>
 
     <div class="header_text">
       <h1>WE ARE CREATIVES</h1>
-      <img src="images/icon-arrow-down.svg" class="header_arrow">
+      <img src="images/icon-arrow-down.svg" alt="icon_arrow_down" class="header_arrow">
     </div>
   </div>
 
@@ -52,10 +52,10 @@
           <a class="container_link yellow_hover" href="#">Learn more</a>
         </div>
       </div>
-      <img class="container_image" src="./images/desktop/image-transform.jpg">
+      <img class="container_image" alt="image transform" src="./images/desktop/image-transform.jpg">
     </article>
     <article class="container_art red">
-      <img class="container_image" src="./images/desktop/image-stand-out.jpg">
+      <img class="container_image" alt="image stand out" src="./images/desktop/image-stand-out.jpg">
       <div class="container_text">
         <div class="container_box">
           <h1 class="container_header">Stand out to the right audience</h1>
@@ -70,7 +70,7 @@
   </div>
   <section class="gp">
     <div class="gp_element">
-      <img class="gp_img" src="./images/desktop/image-graphic-design.jpg">
+      <img class="gp_img" alt="image graphic design" src="./images/desktop/image-graphic-design.jpg">
       <div class="gp_text graphic">
         <h3 class="gp_header">Graphic design</h3>
         <p class="gp_info">Great design makes you memorable. We deliver artwork that underscores your brand
@@ -80,7 +80,7 @@
       </div>
     </div>
     <div class="gp_element">
-      <img class="gp_img" src="./images/desktop/image-photography.jpg">
+      <img class="gp_img" alt="image photography" src="./images/desktop/image-photography.jpg">
       <div class="gp_text photography">
         <h3 class="gp_header">Photography</h3>
         <p class="gp_info">Increase your credibility by getting the most stunning, high-quality photos that
@@ -93,7 +93,7 @@
     <h4 class="opinions_header">CLIENT TESTIMONIALS</h4>
     <div class="opinions_elements">
       <div class="opinions_person">
-        <img class="opinions_img" src="./images/image-emily.jpg">
+        <img class="opinions_img" alt="emily face" src="./images/image-emily.jpg">
         <p class="opinions_text">We put our trust in Sunnyside and they delivered, making sure our needs were met and
           deadlines were always
           hit.
@@ -103,14 +103,14 @@
         <span class="opinions_position">Marketing Director</span>
       </div>
       <div class="opinions_person">
-        <img class="opinions_img" src="./images/image-thomas.jpg">
+        <img class="opinions_img" alt="thomas face" src="./images/image-thomas.jpg">
         <p class="opinions_text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it
           a satisfying and enjoyable experience.</p>
         <h5 class="opinions_name">Thomas S.</h5>
         <span class="opinions_position">Chief Operating Officer</span>
       </div>
       <div class="opinions_person">
-        <img class="opinions_img" src="./images/image-jennie.jpg">
+        <img class="opinions_img" alt="jennie face" src="./images/image-jennie.jpg">
         <p class="opinions_text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
           Highly recommended!</p>
         <h5 class="opinions_name">Jennie F.</h5>
@@ -120,28 +120,32 @@
   </div>
 
   <div class="images">
-    <div class="images_element"><img class="images_photo" src="./images/desktop/image-gallery-milkbottles.jpg">
+    <div class="images_element"><img alt="milk bottles photo" class="images_photo"
+        src="./images/desktop/image-gallery-milkbottles.jpg">
     </div>
-    <div class="images_element"><img class="images_photo" src="./images/desktop/image-gallery-orange.jpg"></div>
-    <div class="images_element"><img class="images_photo" src="./images/desktop/image-gallery-cone.jpg"></div>
-    <div class="images_element"><img class="images_photo" src="./images/desktop/image-gallery-sugarcubes.jpg"></div>
+    <div class="images_element"><img alt="picture of orange" class="images_photo"
+        src="./images/desktop/image-gallery-orange.jpg"></div>
+    <div class="images_element"><img class="cone image" src="./images/desktop/image-gallery-cone.jpg"></div>
+    <div class="images_element"><img class="sugar cubes picture" src="./images/desktop/image-gallery-sugarcubes.jpg">
+    </div>
   </div>
 
   <footer class="footer">
-    <div><img class="footer_logo" src="./images/logo-footer.svg"></div>
+    <div><img class="footer_logo" alt="footer logo image" src="./images/logo-footer.svg"></div>
     <div class="footer_list">
       <a class="footer_link" href="">About</a>
       <a class="footer_link" href="">Services</a>
       <a class="footer_link" href="">Projects</a>
     </div>
     <div class="footer_social">
-      <a class="footer_icon" href="https://www.facebook.com/" target="_blank"><img src="./images/icon-facebook.svg"></a>
-      <a class="footer_icon" href="https://www.instagram.com/" target="_blank"><img
+      <a class="footer_icon" href="https://www.facebook.com/" target="_blank"><img alt="facebook icon"
+          src="./images/icon-facebook.svg"></a>
+      <a class="footer_icon" href="https://www.instagram.com/" target="_blank"><img alt="instagram icon"
           src="./images/icon-instagram.svg"></a>
-      <a class="footer_icon" href="https://twitter.com/?lang=pl" target="_blank"><img
+      <a class="footer_icon" href="https://twitter.com/?lang=pl" target="_blank"><img alt="twitter icon"
           src="./images/icon-twitter.svg"></a>
-      <a class="footer_icon" href="https://pl.pinterest.com/" target="_blank"><img class="footer_icon"
-          src="./images/icon-pinterest.svg"></a>
+      <a class="footer_icon" href="https://pl.pinterest.com/" target="_blank"><img alt="pinterest icon"
+          class="footer_icon" src="./images/icon-pinterest.svg"></a>
     </div>
   </footer>
   <script src="script.js"></script>
