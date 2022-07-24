@@ -53,6 +53,10 @@ body {
 }
 
 
+.mobile_nav{
+    display: none;
+}
+
 .mobile_menu{
     display: none;
 }
@@ -320,6 +324,10 @@ body {
 
     .mobile_menu{
         display: inline-flex;
+        opacity: 1;
+    }
+    .mobile_menu.active{
+        opacity: 0.5;
     }
 
     .mobile_nav{
@@ -337,6 +345,9 @@ body {
         font-family: 'Barlow', sans-serif;
         font-weight: bold;
         color: hsl(210, 4%, 67%);
+    }
+    .mobile_nav.active{
+        display: flex;
     }
 
     .mobile_nav::after{
