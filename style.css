@@ -5,7 +5,7 @@ body {
 
 .big_image{
     background-image: url("./images/desktop/image-header.jpg");
-    min-height: 750px;
+    min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,6 +53,10 @@ body {
 }
 
 
+.mobile_nav{
+    display: none;
+}
+
 .mobile_menu{
     display: none;
 }
@@ -67,11 +71,22 @@ body {
     font-size: 25px;
     letter-spacing: 10px;
     color: hsl(0, 0%, 100%);
+    position: relative;
+}
+.header_text::after{
+    content: "";
+    background: center url("images/icon-arrow-down.svg") no-repeat;
+    width: 36px;
+    height: 114px;
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    margin-left: -18px;
 }
 
-.header_arrow{
+/* .header_arrow{
     padding-top: 40px;
-}
+} */
 
 .container {
     display: flex;
@@ -226,7 +241,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5px;
+    padding: 5px 0;
     width: 270px;
 }
 
@@ -312,6 +327,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        min-height: 500px;
     }
     .nav_section{
         display: none;
@@ -320,23 +336,28 @@ body {
 
     .mobile_menu{
         display: inline-flex;
+        opacity: 1;
+    }
+    .mobile_menu.active{
+        opacity: 0.5;
     }
 
     .mobile_nav{
-        display: flex;
+        display:none;
         justify-content: center;
         align-items: center;
         position: fixed;
-        left: 48%;
         top: 80px;
-        transform: translateX(-50%);
         background-color: hsl(46, 55%, 94%);
         text-align: center;
-        padding: 10px 40px;
-        width: 60%;
+        margin-left: 30px;
+        padding: 10px 98px;
         font-family: 'Barlow', sans-serif;
         font-weight: bold;
         color: hsl(210, 4%, 67%);
+    }
+    .mobile_nav.active{
+        display: flex;
     }
 
     .mobile_nav::after{
@@ -379,7 +400,7 @@ body {
         font-family: 'Barlow', sans-serif;
         color: hsl(210, 4%, 67%);
     }
-
+/* 
     .header_text{
         display: flex;
        justify-content: center;
@@ -387,7 +408,7 @@ body {
        text-align: center;
        font-size: 20px;
        padding: 10px;
-    }
+    } */
 
     .container_art{
         display: flex;
